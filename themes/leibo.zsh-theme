@@ -1,6 +1,6 @@
 # leibo.zsh-theme
-# Repo:
-# Direct Lin:
+# Repo: https://github.com/jasonleibowitz/oh-my-zsh/tree/leibo_theme
+# Direct Link: https://github.com/jasonleibowitz/oh-my-zsh/blob/leibo_theme/themes/leibo.zsh-theme
 # This theme was modified from the great af-magic theme by andy fleming
 
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="green"; fi
@@ -18,13 +18,14 @@ RPS1='${return_code}'
 # color vars
 eval my_gray='$FG[237]'
 eval my_orange='$FG[214]'
+eval light_gray='$FG[253]'
 
 # right prompt
 if type "virtualenv_prompt_info" > /dev/null
 then
-  RPROMPT='$(virtualenv_prompt_info)$my_gray [%w %D{%T}]%{$reset_color%}%'
+  RPROMPT='$(virtualenv_prompt_info)$light_gray [%w %D{%T}]'
 else
-  RPROMPT='$my_gray%n@%m%{$reset_color%}%'
+  RPROMPT='$light_gray%n@%m'
 fi
 
 # git settings
