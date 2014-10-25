@@ -10,7 +10,6 @@ local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 PROMPT='$FG[237]------------------------------------------------------------%{$reset_color%}
 $FG[253]%n \
 $FG[033]%~ \
-$FG[253]on \
 $(git_prompt_info)
 $FG[105]%(!.#.💾 )%{$reset_color%} '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
@@ -29,7 +28,7 @@ else
 fi
 
 # git settings
-ZSH_THEME_GIT_PROMPT_PREFIX="$FG[001](branch:"
+ZSH_THEME_GIT_PROMPT_PREFIX="$FG[253]on $FG[001](branch:"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_DIRTY="$FG[007] ✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[001])%{$reset_color%}"
