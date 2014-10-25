@@ -16,7 +16,6 @@ $FG[105]%(!.#.💾 )%{$reset_color%} '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 RPS1='${return_code}'
 
-
 # color vars
 eval my_gray='$FG[237]'
 eval my_orange='$FG[214]'
@@ -32,5 +31,5 @@ fi
 # git settings
 ZSH_THEME_GIT_PROMPT_PREFIX="$FG[001](branch:"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
-ZSH_THEME_GIT_PROMPT_DIRTY="$FG[007]*%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="$FG[007] ✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[001])%{$reset_color%}"
